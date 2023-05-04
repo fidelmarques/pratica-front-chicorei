@@ -2,7 +2,7 @@
   <div class="product-card">
     <img
       class="product-image"
-      src="../../assets/e123fc40-decc-11ed-b748-115d167b6c8d.avif"
+      src="../../assets/img/e123fc40-decc-11ed-b748-115d167b6c8d.avif"
     />
     <div class="product-info">
       <h3 class="product-title">Camiseta Clean</h3>
