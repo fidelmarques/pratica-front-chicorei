@@ -4,4 +4,4 @@
   <router-view />
 </template>
 
-<style lang="less" src="./style.less" scoped></style>
+<style lang="less" src="./global.less"></style>
