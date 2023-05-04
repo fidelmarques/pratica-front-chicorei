@@ -1,0 +1,97 @@
+@h1-font-size-small: 2rem;
+@h1-font-size-medium: 2.25rem;
+@h1-font-size-large: 2.5rem;
+
+@h1-font-weight: 700;
+
+@h2-font-size-small: 1.5rem;
+@h2-font-size-medium: 1.75rem;
+@h2-font-size-large: 2rem;
+
+@h2-font-weight: 600;
+
+@h3-font-size-small: 1rem;
+@h3-font-size-medium: 1.25rem;
+@h3-font-size-large: 1.5rem;
+
+@h3-font-weight: 600;
+
+@h4-font-size-small: 0.875rem;
+@h4-font-size-medium: 1rem;
+@h4-font-size-large: 1.25rem;
+
+@h4-font-weight: 500;
+
+@h5-font-size-small: 0.75rem;
+@h5-font-size-medium: 0.875rem;
+@h5-font-size-large: 1rem;
+
+@h5-font-weight: 400;
+
+@h6-font-size: 1rem;
+@h6-font-weight: 600;
+
+.h1-typography {
+  font-weight: @h1-font-weight;
+  font-size: @h1-font-size-small;
+
+  @media (min-width: 425px) {
+    font-size: @h1-font-size-medium;
+  }
+  @media (min-width: 1024px) {
+    font-size: @h1-font-size-large;
+  }
+}
+
+.h2-typography {
+  font-weight: @h2-font-weight;
+  font-size: @h2-font-size-small;
+
+  @media (min-width: 425px) {
+    font-size: @h2-font-size-medium;
+  }
+}
+
+.h3-typography {
+  font-weight: @h3-font-weight;
+  font-size: @h3-font-size-small;
+
+  @media (min-width: 425px) {
+    font-size: @h3-font-size-medium;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: @h3-font-size-small;
+  }
+}
+
+.h4-typography {
+  font-weight: @h4-font-weight;
+  font-size: @h4-font-size-small;
+
+  @media (min-width: 425px) {
+    font-size: @h4-font-size-medium;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: @h4-font-size-small;
+  }
+}
+
+.h5-typography {
+  font-weight: @h5-font-weight;
+  font-size: @h5-font-size-small;
+
+  @media (min-width: 425px) {
+    font-size: @h5-font-size-medium;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: @h5-font-size-small;
+  }
+}
+
+.h6-typography {
+  font-size: @h6-font-size;
+  font-weight: @h6-font-weight;
+}
