@@ -10,16 +10,22 @@
 
       <ul class="menu-list">
         <li class="menu-item">
-          <a class="" href="/">Página inicial</a>
+          <router-link to="/" @click="toggleMenu">Página inicial</router-link>
         </li>
         <li class="menu-item">
-          <a class="" href="/produtos/camisetas">Camisetas</a>
+          <router-link to="/produtos/camisetas" @click="toggleMenu"
+            >Camisetas</router-link
+          >
         </li>
         <li class="menu-item">
-          <a class="" href="/produtos/moletons">Moletons</a>
+          <router-link to="/produtos/moletons" @click="toggleMenu"
+            >Moletons</router-link
+          >
         </li>
         <li class="menu-item">
-          <a class="" href="/produtos/shorts">Shorts</a>
+          <router-link to="/produtos/shorts" @click="toggleMenu"
+            >Shorts</router-link
+          >
         </li>
       </ul>
     </div>

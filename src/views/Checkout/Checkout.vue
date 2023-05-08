@@ -258,7 +258,9 @@
     </div>
     <div v-if="finishedOrder" class="finished-order-container">
       <h2>Pedido realizado com sucesso!</h2>
-      <a href="/">Retornar à pagina inicial</a>
+      <router-link to="/" @click="toggleMenu"
+        >Retornar à pagina inicial</router-link
+      >
     </div>
   </main>
 </template>
@@ -394,14 +396,18 @@ export default {
         ? (this.errors["cvc"] = "O CVC é obrigatório!")
         : (this.errors["cvc"] = null);
 
+      let isValid = true;
+
       Object.values(this.errors).forEach((error) => {
         if (error) {
-          console.log("por favor corrija os erros!");
+          isValid = false;
           return;
         }
       });
 
-      this.checkoutOrder();
+      if (isValid) {
+        this.checkoutOrder();
+      }
     },
     incrementCartQuantity() {
       this.cartQuantity++;

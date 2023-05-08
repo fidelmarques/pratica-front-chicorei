@@ -6,14 +6,14 @@
           <i class="bi bi-list"></i>
         </button>
 
-        <a href="/">
+        <router-link to="/">
           <h1 class="header-title">Chico Rei</h1>
-        </a>
+        </router-link>
 
         <button type="button" class="cart-button">
-          <a href="/checkout">
+          <router-link to="/checkout">
             <i class="bi bi-bag"></i>
-          </a>
+          </router-link>
         </button>
       </div>
     </nav>
