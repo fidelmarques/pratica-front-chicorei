@@ -1,0 +1,28 @@
+@import "../../assets/less/index.less";
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px 0;
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.h2-title {
+  .h2-typography();
+  padding: 0 24px;
+}
+
+.category-filter {
+  .h3-typography();
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 24px;
+
+  select {
+    max-width: 150px;
+  }
+}

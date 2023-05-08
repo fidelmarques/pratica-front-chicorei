@@ -10,25 +10,16 @@
 
       <ul class="menu-list">
         <li class="menu-item">
-          <a class="" href="#">Página inicial</a>
+          <a class="" href="/">Página inicial</a>
         </li>
         <li class="menu-item">
-          <a class="" href="#">Camisetas</a>
+          <a class="" href="/produtos/camisetas">Camisetas</a>
         </li>
         <li class="menu-item">
-          <a class="" href="#">Moletons</a>
+          <a class="" href="/produtos/moletons">Moletons</a>
         </li>
         <li class="menu-item">
-          <a class="" href="#">Shorts</a>
-        </li>
-        <li class="menu-item">
-          <a class="" href="#">Meias</a>
-        </li>
-        <li class="menu-item">
-          <a class="" href="#">Bermudas</a>
-        </li>
-        <li class="menu-item">
-          <a class="" href="#">Calças</a>
+          <a class="" href="/produtos/shorts">Shorts</a>
         </li>
       </ul>
     </div>
