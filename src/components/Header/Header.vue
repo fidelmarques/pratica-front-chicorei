@@ -21,8 +21,6 @@
 
 <script>
 import { ref } from "vue";
-import { blurred } from "../../views/Home/Home.vue";
-
 import Menu from "../Menu/Menu.vue";
 
 export const collapsed = ref(false);
@@ -38,7 +36,6 @@ export const toggleMenu = () => {
   } else {
     collapsed.value = !collapsed.value;
   }
-  blurred.value = !blurred.value;
 };
 
 export default {
@@ -46,7 +43,7 @@ export default {
   components: { Menu },
 
   setup() {
-    return { collapsed, blurred, closing, toggleMenu };
+    return { collapsed, closing, toggleMenu };
   },
 };
 </script>
