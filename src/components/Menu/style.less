@@ -1,0 +1,98 @@
+@import "../../assets/less/index.less";
+
+.menu-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+
+  display: flex;
+}
+
+.menu-blurred-background {
+  width: 100%;
+  .blur();
+}
+
+.menu {
+  background-color: @platinum;
+
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 60vw;
+  max-width: 300px;
+
+  animation: animateMenu 0.4s;
+
+  box-shadow: 1px 0px 5px @gray;
+}
+
+.menu-header {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  span {
+    .h2-typography();
+    padding: 6px 12px;
+  }
+
+  button {
+    .header-button();
+  }
+}
+
+.menu-list {
+  padding: 24px 12px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+.menu-item {
+  .h3-typography();
+
+  a {
+    color: @black;
+  }
+}
+
+@keyframes animateMenu {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.close {
+  animation: closeMenu 0.4s;
+}
+
+@keyframes closeMenu {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+    backdrop-filter: blur(0px);
+  }
+}
