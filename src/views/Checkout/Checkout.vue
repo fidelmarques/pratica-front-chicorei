@@ -11,9 +11,7 @@
       </div>
       <div v-if="collapsedCart">
         <div class="cart-item">
-          <img
-            src="../../assets/img/e123fc40-decc-11ed-b748-115d167b6c8d.avif"
-          />
+          <img src="../../assets/img/3.avif" />
           <div class="cart-item-info">
             <div class="info-section">
               <h3>Camiseta Happy</h3>
