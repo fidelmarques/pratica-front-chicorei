@@ -11,7 +11,9 @@
         </a>
 
         <button type="button" class="cart-button">
-          <i class="bi bi-bag"></i>
+          <a href="/checkout">
+            <i class="bi bi-bag"></i>
+          </a>
         </button>
       </div>
     </nav>

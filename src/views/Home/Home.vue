@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <main>
     <h2 class="h2-title">Camisetas</h2>
 

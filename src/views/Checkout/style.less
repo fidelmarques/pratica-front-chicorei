@@ -1,0 +1,189 @@
+@import "../../assets/less/index.less";
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 24px;
+}
+
+.checkout-title {
+  .h2-typography();
+  text-align: left;
+}
+
+.form-title {
+  .h3-typography();
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  padding: 25px 24px;
+
+  width: 100%;
+  max-width: 600px;
+}
+
+#checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.checkout-cep-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-container {
+  label {
+    .h4-typography();
+  }
+}
+
+.form-error {
+  padding-top: 5px;
+  .h5-typography();
+  font-weight: bold;
+  color: @orange;
+}
+
+.button-cep {
+  .search-button();
+  background-color: @orange;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.button-submit {
+  .checkout-button();
+  font-weight: 600;
+  color: @white;
+  background-color: @orange;
+}
+
+.cart-container {
+  .checkout-container();
+  background-color: @gray;
+  width: 100%;
+  color: @white;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-title {
+  .h2-typography();
+}
+
+.cart-button {
+  .h4-typography();
+}
+.cart-price {
+  .h3-typography();
+}
+
+.loading {
+  font-size: 1rem;
+  color: @gray;
+}
+
+.cart-item {
+  background-color: @white;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  img {
+    width: 100px;
+  }
+
+  animation: animateMenu 1s;
+}
+
+@keyframes animateMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cart-item-info {
+  color: @black;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    .h3-typography();
+  }
+
+  h4 {
+    .h4-typography();
+  }
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-qtd-section {
+  display: flex;
+  align-items: center;
+
+  span {
+    flex: 2;
+    text-align: center;
+  }
+}
+
+.qtd-button {
+  .cart-button();
+  background-color: @black;
+  color: @white;
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+}
+
+.finished-order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+
+  h2 {
+    .h2-typography();
+    text-align: center;
+  }
+
+  a {
+    .h3-typography();
+
+    background-color: @black;
+    color: @white;
+    text-align: center;
+    padding: 8px 16px;
+  }
+}
